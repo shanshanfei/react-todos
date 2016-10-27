@@ -1,51 +1,51 @@
 	
-	ËµÃ÷£º¸ÃÏîÄ¿ÊÇÊ¹ÓÃwebpack+ES6½øĞĞReact¿ª·¢£¬×îÖÕÊä³öHello World£¬²¢¸½¼òµ¥µÄÑùÊ½¡£
+è¯´æ˜ï¼šè¯¥é¡¹ç›®æ˜¯ä½¿ç”¨webpack+ES6è¿›è¡ŒReactå¼€å‘ï¼Œæœ€ç»ˆè¾“å‡ºHello Worldï¼Œå¹¶é™„ç®€å•çš„æ ·å¼ã€‚
 
-	¿ª·¢Á÷³Ì´óÖÂÈçÏÂ£º
+å¼€å‘æµç¨‹å¤§è‡´å¦‚ä¸‹ï¼š
 
-	1¡¢git cloneµ½±¾µØ£»
+1ã€git cloneåˆ°æœ¬åœ°ï¼›
 
-	2¡¢cd init-react Ö´ĞĞnpm install°²×°ÏîÄ¿Ïà¹ØÒÀÀµ£¬Ö÷ÒªÓĞ£º
+2ã€cd init-react æ‰§è¡Œnpm installå®‰è£…é¡¹ç›®ç›¸å…³ä¾èµ–ï¼Œä¸»è¦æœ‰ï¼š
 
-		npm install react react-dom --save-dev
-		npm install webpack webpack-dev-server --save-dev
-		npm install babel-loader babel-core babel-preset-react babel-preset-es2015 --save-dev
+	npm install react react-dom --save-dev
+	npm install webpack webpack-dev-server --save-dev
+	npm install babel-loader babel-core babel-preset-react babel-preset-es2015 --save-dev
 
-		ÏîÄ¿×îÖÕÄ¿Â¼½á¹¹£º
+	é¡¹ç›®æœ€ç»ˆç›®å½•ç»“æ„ï¼š
 
-		--init-react
+	    --init-react
 		  |--app
-		  	|--components£¨×é¼şÄ¿Â¼£©
-		      		|--Hello£¨×é¼ş1£©
+		  	|--componentsï¼ˆç»„ä»¶ç›®å½•ï¼‰
+		      		|--Helloï¼ˆç»„ä»¶1ï¼‰
      			 		|--index.js
       			 		|--index.less
-    		     		|--World£¨×é¼ş2£©
+    		     		|--Worldï¼ˆç»„ä»¶2ï¼‰
       			 		|--index.js
       			 		|--index.less
-    		      		|--index.js£¨Èë¿ÚÎÄ¼ş£©
-  		  |--build£¨Êä³öÄ¿Â¼£©
+    		      		|--index.jsï¼ˆå…¥å£æ–‡ä»¶ï¼‰
+  		  |--buildï¼ˆè¾“å‡ºç›®å½•ï¼‰
     			|--index.html
-    			|--bundle.js£¨Êä³öÎÄ¼ş£¬ÓÉ webpack ´ò°üºóÉú³ÉµÄ£©
+    			|--bundle.jsï¼ˆè¾“å‡ºæ–‡ä»¶ï¼Œç”± webpack æ‰“åŒ…åç”Ÿæˆçš„ï¼‰
   		  |--package.json
   		  |--webpack.config.js
 
-	3¡¢package.jsonÖĞscriptsĞ´ºÃÁË¹¹½¨ÈÎÎñdev£¬ÀûÓÃÇ°Ãæ°²×°ºÃµÄwebpack-dev-server£¬½øĞĞÃâË¢ĞÂÒ³ÃæÊµÊ±¿´Ò³ÃæĞ§¹û£¬Ö´ĞĞÃüÁînpm run dev£»
+3ã€package.jsonä¸­scriptså†™å¥½äº†æ„å»ºä»»åŠ¡devï¼Œåˆ©ç”¨å‰é¢å®‰è£…å¥½çš„webpack-dev-serverï¼Œè¿›è¡Œå…åˆ·æ–°é¡µé¢å®æ—¶çœ‹é¡µé¢æ•ˆæœï¼Œæ‰§è¡Œå‘½ä»¤npm run devï¼›
 
-	   webpack.config.jsÖĞ×öÏàÓ¦ÅäÖÃ£º
+	  webpack.config.jsä¸­åšç›¸åº”é…ç½®ï¼š
 		entry: [
     			'webpack/hot/dev-server',
     			'webpack-dev-server/client?http://localhost:8080',
     			APP_PATH
  		]
 
-	4¡¢°²×°ÆäËûµÄÏà¹Øloader:
+4ã€å®‰è£…å…¶ä»–çš„ç›¸å…³loader:
 
-	   npm install less-loader css-loader style-loader --save-dev
+	npm install less-loader css-loader style-loader --save-dev
 
-	5¡¢×îÖÕÔËĞĞ²½Öè£º
+5ã€æœ€ç»ˆè¿è¡Œæ­¥éª¤ï¼š
 
-		git clone https://github.com/shanshanfei/init-react.git
-		cd react-webpack-es6
-		npm install
-		npm run dev
+	git clone https://github.com/shanshanfei/init-react.git
+	cd react-webpack-es6
+	npm install
+	npm run dev
 
