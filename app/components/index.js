@@ -2,8 +2,10 @@
 import './Hello/index.less';
 import './World/index.less';
 
-// import Hello from './Hello/index.js';
-// import World from './World/index.js';
+//ES6语法import
+import Hello from './Hello/index.js';
+import World from './World/index.js';
 
-require('./Hello/index.js');
-require('./World/index.js');
+//nodejs require，与import作用相同
+// require('./Hello/index.js');
+// require('./World/index.js');

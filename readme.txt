@@ -44,7 +44,7 @@
 
 	5、最终运行步骤：
 
-		git clone https://github.com/feishanshan/init-react.git
+		git clone https://github.com/shanshanfei/init-react.git
 		cd react-webpack-es6
 		npm install
 		npm run dev
