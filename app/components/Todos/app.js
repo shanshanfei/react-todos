@@ -17,24 +17,23 @@ class App extends React.Component {
                 {id: this.uuid(), title: '开会', isDone: true},
             ]
         };
-        this.state.isAllDone = this.state.todos.length > 0 && this.state.todos.filter(todo => todo.isDone).length  === this.state.todos.length;
     }
     //生成uuid，随机32位进制数作为todo id
     uuid() {
-        var s = [];
-        var hexDigits = "0123456789abcdef";
-        for (var i = 0; i < 36; i++) {
+        let s = [], hexDigits = "0123456789abcdef";
+        for (let i = 0; i < 36; i++) {
             s[i] = hexDigits.substr(Math.floor(Math.random() * 0x10), 1);
         }
         s[14] = "4";  // bits 12-15 of the time_hi_and_version field to 0010
         s[19] = hexDigits.substr((s[19] & 0x3) | 0x8, 1);  // bits 6-7 of the clock_seq_hi_and_reserved to 01
         s[8] = s[13] = s[18] = s[23] = "-";
 
-        var uuid = s.join("");
+        let uuid = s.join("");
         return uuid;
     }
     //复选框控制状态
     changeState(id, isDone){
+        //for of使用
         for(let todo of this.state.todos){
             if(todo.id === id){
                 todo.isDone = isDone;
@@ -46,6 +45,7 @@ class App extends React.Component {
     //删除
     deleteTodo(id){
         let todos = this.state.todos;
+        //map使用
         todos.map(function(todo, index, arr){
             if(todo.id === id){
                 todos.splice(index, 1);
@@ -72,6 +72,7 @@ class App extends React.Component {
         this.setState({todos: this.state.todos});
     }
     render(){
+        //filter是个好函数
         let props = {
             hasDoneCount: this.state.todos && this.state.todos.filter(todo => todo.isDone).length || 0,
             totalCount: this.state.todos.length || 0
