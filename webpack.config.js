@@ -22,5 +22,9 @@ module.exports = {
           {test: /\.jsx?$/, loader: "babel-loader?presets[]=react,presets[]=es2015,presets[]=stage-1",exclude: /node_modules/},
           {test: /\.less$/, loader: 'style!css!less'}
         ]
-    }
+    },
+    plugins: [
+        //代码热替换，不加的话 npm run build报错
+        new webpack.HotModuleReplacementPlugin()
+    ],
 }
