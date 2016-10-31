@@ -1,6 +1,8 @@
 
 说明：该项目是使用webpack+ES6进行React开发，最终输出todo list，并做一些简单的操作，另附简单的样式。
 
+查看演示：https://shanshanfei.github.io/react-todos/
+
 开发流程大致如下：
 
 1、git clone https://github.com/shanshanfei/react-todos.git 到本地；
