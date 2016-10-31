@@ -16,17 +16,17 @@
 	--init-react
 		|--app
 		  	|--components（组件目录）
-	      		|--Todos（组件1）
+	      		       |--Todos（组件1）
  			 		|--app.js
   			 		|--app.less
   			 		|--header.js
-                    |--main.js
+                                        |--main.js
   			 		|--footer.js
-		      		|--item.js
-                |--index.js 入口主文件
+		      		        |--item.js
+                               |--index.js 入口主文件
   		|--build（输出目录）
-    		|--index.html
-    		|--bundle.js（输出文件，由 webpack 打包后生成的）
+    		        |--index.html
+    		        |--bundle.js（输出文件，由 webpack 打包后生成的）
   		|--package.json
   		|--webpack.config.js
 
@@ -49,5 +49,5 @@
 	cd react-todos
 	npm install
 	npm run dev
-    浏览器访问 http://localhost:8080即可看到效果
+        浏览器访问 http://localhost:8080即可看到效果
 
