@@ -19,7 +19,7 @@ module.exports = {
         loaders: [
           //loader写法很重要，babel升级拆分了模块，需要 npm install babel-loader babel-core babel-preset-es2015 babel-preset-react —save-dev
           //然后 loader: "babel?presets[]=react,presets[]=es2015"就不会报语法错误了
-          {test: /\.js$/, loader: "babel?presets[]=react,presets[]=es2015"},
+          {test: /\.jsx?$/, loader: "babel-loader?presets[]=react,presets[]=es2015,presets[]=stage-1",exclude: /node_modules/},
           {test: /\.less$/, loader: 'style!css!less'}
         ]
     }
